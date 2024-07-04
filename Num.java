@@ -23,7 +23,9 @@ public class Num { //Класс числа
         return number; //возвращаем НОД
     }
     public static void main(String[] args) {
+        System.out.print("У числа 49 делителей: ");
         System.out.println(new Num(49).divisors());
+        System.out.print("НОД чисел 52 и 78: ");
         System.out.println(new Num(52).gcd(78));
     }
 }
