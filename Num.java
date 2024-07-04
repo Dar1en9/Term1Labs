@@ -12,7 +12,18 @@ public class Num { //Класс числа
         if (i == sqrtNum) count++; //если корень из числа целый
         return count;
     }
+    public int gcd(int number) { //считает наибольший общий делитель числа n и number
+        int a = n;
+        int ost = a % number;
+        while (ost != 0) { //ищем НОД
+            a = number;
+            number = ost;
+            ost = a % number;
+        }
+        return number; //возвращаем НОД
+    }
     public static void main(String[] args) {
         System.out.println(new Num(49).divisors());
+        System.out.println(new Num(52).gcd(78));
     }
 }
