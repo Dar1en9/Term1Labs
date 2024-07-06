@@ -1,5 +1,5 @@
 import java.util.Random;
-public class transposeMatrix {
+public class TransposeMatrix {
     static int[][] newArray(int sz1, int sz2){ //создает массив заданной размерности
         int[][] x;
         x = new int[sz1][];
